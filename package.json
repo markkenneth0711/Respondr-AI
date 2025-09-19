@@ -1,0 +1,17 @@
+{
+  "name": "gemini-chatbot",
+  "version": "1.0.0",
+  "description": "A clean, minimalist chatbot UI for Google's Gemini AI API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "gemini",
+    "ai",
+    "chatbot",
+    "google"
+  ],
+  "author": "",
+  "license": "MIT"
+} 

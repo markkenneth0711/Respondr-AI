@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respondr Chat</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Chat History</h3>
+                <button id="new-chat" class="new-chat-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                    </svg>
+                    New Chat
+                </button>
+            </div>
+            <div class="chat-history" id="chat-history">
+                <!-- Chat history will be populated here -->
+                <p class="no-history">No chat history yet</p>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <header>
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <h1>Respondr</h1>
+                </div>
+                <div class="api-key-container">
+                    <input type="password" id="api-key-input" placeholder="Enter your Gemini API Key">
+                    <button id="save-api-key">Save</button>
+                </div>
+            </header>
+            
+            <main>
+                <div class="chat-container" id="chat-container">
+                    <div class="welcome-message">
+                        <h2>Welcome to Respondr</h2>
+                    </div>
+                    <!-- Chat messages will appear here -->
+                </div>
+                
+                <div class="input-area">
+                    <textarea id="user-input" placeholder="Ask Respondr something..." rows="1"></textarea>
+                    <button id="send-button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
